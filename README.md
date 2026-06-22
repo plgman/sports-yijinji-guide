@@ -1,2 +1,46 @@
-# sports-yijinji-guide
-HTML page archive and documentation
+# Sports-Yijinji-Guide
+
+一个用于归档和发布独立 HTML 页面的仓库。
+
+## 项目简介
+
+本仓库主要用于存放、管理和发布多个独立的 HTML 页面。这些页面可能涉及不同主题、工具或信息展示，彼此之间没有强关联。仓库本身不针对任何特定网站或服务，仅作为静态 HTML 文件的存档和分发点。
+
+## 目录结构
+
+```
+sports-yijinji-guide/
+├── pages/          # 存放各独立 HTML 页面文件
+├── assets/         # 页面引用的公共资源（如 CSS、JS、图片等）
+├── index.html      # 可选的仓库首页或导航页
+└── README.md       # 本文件
+```
+
+- **pages/**：每个 HTML 文件代表一个独立的页面，命名清晰以便区分。
+- **assets/**：存放页面所需的公共资源，避免重复引用。
+- **index.html**：可选，用于提供页面索引或导航。
+
+## 页面归档说明
+
+- 每个 HTML 页面均为独立文件，可直接通过浏览器打开或部署到静态托管服务。
+- 页面内容可能包含示例、工具、说明或存档信息，不保证实时更新。
+- 部分页面可能依赖外部资源（如 CDN 加载的库），请确保网络连接正常。
+
+## 维护说明
+
+- 本仓库由个人维护，不定期更新或新增页面。
+- 欢迎提交 Issue 或 Pull Request 协助改进页面内容或修复问题。
+- 不承诺对任何页面提供长期支持或更新。
+
+## 使用方式
+
+1. 克隆仓库到本地：
+   ```bash
+   git clone https://github.com/your-username/sports-yijinji-guide.git
+   ```
+2. 直接在浏览器中打开 `pages/` 目录下的 HTML 文件。
+3. 或将整个仓库部署到任意静态托管服务（如 GitHub Pages、Netlify 等）。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)，可自由使用、修改和分发，但请保留原始版权声明。
