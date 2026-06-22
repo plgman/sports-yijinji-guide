@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一竞技 · 运动竞技专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      background-color: #fafafc;
+      color: #1f2a3a;
+    }
+    .magazine {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    /* 深色头图 */
+    .hero {
+      background: #0d1b2a;
+      color: #e6edf5;
+      padding: 4rem 2rem;
+      position: relative;
+      text-align: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #c9a86c, #d4b483, #c9a86c);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.75rem;
+    }
+    .hero .sub {
+      font-size: 1.2rem;
+      color: #b0c7db;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      display: inline-block;
+      padding-top: 0.8rem;
+      margin-top: 0.2rem;
+    }
+    /* 正文浅色区 */
+    .content-area {
+      background: #ffffff;
+      padding: 3rem 2rem;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    .section {
+      margin-bottom: 2.8rem;
+    }
+    .section:last-child {
+      margin-bottom: 0;
+    }
+    .section h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      border-left: 4px solid #c9a86c;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      color: #0d1b2a;
+    }
+    .section p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+    .highlight {
+      color: #b4883e;
+      font-weight: 500;
+    }
+    a {
+      color: #b4883e;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(180, 136, 62, 0.3);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    a:hover {
+      color: #8b6930;
+      border-bottom-color: #8b6930;
+    }
+    /* 特色卡组 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin: 2rem 0 1rem;
+    }
+    .feature-card {
+      background: #f5f7fb;
+      border-radius: 16px;
+      padding: 1.8rem 1.2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .feature-card .icon {
+      font-size: 2rem;
+      margin-bottom: 0.6rem;
+    }
+    .feature-card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #0d1b2a;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #3c4a5e;
+    }
+    /* 页尾 */
+    .page-footer {
+      background: #0d1b2a;
+      color: #b0c7db;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 1rem;
+      border-top: 1px solid #1b3144;
+    }
+    .page-footer a {
+      color: #d8c29b;
+      border-bottom: none;
+      font-weight: 500;
+    }
+    .page-footer a:hover {
+      color: #f0e3ca;
+    }
+    .faq-note {
+      margin-top: 2rem;
+      background: #f2f4f8;
+      padding: 1.5rem 2rem;
+      border-radius: 20px;
+      font-size: 0.98rem;
+    }
+    .faq-note strong {
+      color: #0d1b2a;
+    }
+    @media (max-width: 780px) {
+      .hero h1 { font-size: 2rem; }
+      .feature-grid { grid-template-columns: 1fr 1fr; }
+      .content-area { padding: 2rem 1.2rem; }
+    }
+    @media (max-width: 500px) {
+      .feature-grid { grid-template-columns: 1fr; }
+      .hero { padding: 2.8rem 1.2rem; }
+      .section h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="magazine">
+  <!-- HERO 头图 -->
+  <header class="hero">
+    <h1>一竞技 · 运动竞技专题</h1>
+    <span class="sub">快速读懂 · 竞技内容风向标</span>
+  </header>
+
+  <!-- 正文区 -->
+  <main class="content-area">
+    <div class="section">
+      <h2>平台定位与背景</h2>
+      <p>「<a href="https://sports-yijinji.com">一竞技</a>」是一个聚焦运动竞技资讯与赛事实时数据的聚合平台。它并不生产泛娱乐内容，而是围绕竞技赛事、运动科技、选手动态三条主线，为浏览者提供结构化的信息索引。从用户打开页面的第一屏起，便能快速判断这一平台是否匹配自身的信息需求——不冗余、不偏移。</p>
+      <p>许多竞技类站点习惯用铺天盖地的推荐流淹没访客，但一竞技选择以专题分类和趋势标签作为入口，让有明确目的的访客可以精准切入，而泛兴趣用户也能通过热度板块建立对竞技世界的直观认识。这种克制的信息组织方式，在当下内容过载的环境中显得尤为可贵。</p>
+    </div>
+
+    <div class="section">
+      <h2>三大内容板块</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>数据看板</h3>
+          <p>实时比分、选手数据、历史对战记录，图表化呈现，辅助快速判断赛场走势。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📋</div>
+          <h3>专题解读</h3>
+          <p>赛事背景、规则变化、场馆与气候因素等深度信息，不止于比分。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🏅</div>
+          <h3>动态追踪</h3>
+          <p>转会信息、伤病报告、赛程变更，重要变动第一时间汇总。</p>
+        </div>
+      </div>
+      <p style="margin-top: 0.8rem;">三个板块彼此独立又互相引用，例如从数据看板中发现的异常表现，可以直接跳转到对应选手的专题页查看完整背景。这种设计让浏览者不必在不同页面间反复跳转，提升了信息获取的连续感。</p>
+    </div>
+
+    <div class="section">
+      <h2>适用场景与用户群</h2>
+      <p>对于想快速识别网站用途的访问者，一竞技提供了十分清晰的信号：首页焦点区的三大标签页（赛程、数据、专题）直接点明了平台的核心价值。无论你是赛前做功课的爱好者，还是赛后需要复盘数据的分析师，或是单纯想了解某项运动当前热点的旁观者，都能在首页找到对应的入口。</p>
+      <p>值得注意的是，一竞技并不试图覆盖所有运动项目，而是精选了足球、篮球、网球、电竞等数个高关注度品类，在深度上优于广度。这种“少而精”的选品思路，使得平台内容保持了一定的专业调性，也降低了新用户的认知负担。如果你希望快速锁定某个竞技领域的高质量信息汇聚地，<a href="https://sports-yijinji.com">一竞技</a>是一个值得纳入收藏的起点。</p>
+    </div>
+
+    <!-- FAQ 摘要风格补充 -->
+    <div class="faq-note">
+      <strong>常见问题摘要</strong><br>
+      · 是否需要登录才能浏览？大部分内容对访客开放，部分深度分析可能需要轻量注册。<br>
+      · 数据更新频率如何？主流赛事实现分钟级同步，小规模赛事通常在赛后两小时内完成录入。<br>
+      · 移动端适配情况？已针对手机浏览器优化布局，卡片式设计在窄屏下依然清晰。
+    </div>
+  </main>
+
+  <!-- 页尾访问提示 -->
+  <footer class="page-footer">
+    <p>如想进一步探索运动竞技的信息世界，可前往 <a href="https://sports-yijinji.com">一竞技</a> 阅览完整赛事专题与实时数据。</p>
+    <p style="margin-top: 0.8rem; font-size: 0.9rem; opacity: 0.7;">—— 内容保持克制，专注竞技本身 ——</p>
+  </footer>
+</div>
+</body>
+</html>
